@@ -1,17 +1,18 @@
 class UsersController < ApplicationController
     def index
         # render plain: "I'm in the index action!"
-        render User.all 
+        #users=User.all
+        render json: params
     end
 
     def show
         # user = User.find_by(id: params[:id])
 
-        render User 
+        render json: params
     end
 
     def update
-        user = User.
+        user = User
     end
 
     def destroy
