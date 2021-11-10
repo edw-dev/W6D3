@@ -3,3 +3,137 @@ Started GET "/" for ::1 at 2021-11-10 15:08:22 -0500
 ActiveRecord::NoDatabaseError - connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "first_routes_development" does not exist:
 
 Started POST "/__better_errors/521c9555af39d671/variables" for ::1 at 2021-11-10 15:08:22 -0500
+Started GET "/" for ::1 at 2021-11-10 15:19:20 -0500
+
+ActiveRecord::NoDatabaseError - FATAL:  database "first_routes_development" does not exist:
+
+Started POST "/__better_errors/a8bdfe5bf79950d8/variables" for ::1 at 2021-11-10 15:19:20 -0500
+Started GET "/" for ::1 at 2021-11-10 15:20:54 -0500
+
+ActiveRecord::NoDatabaseError - FATAL:  database "first_routes_development" does not exist:
+
+Started POST "/__better_errors/25490bb9640e9eb6/variables" for ::1 at 2021-11-10 15:20:54 -0500
+Started POST "/__better_errors/25490bb9640e9eb6/variables" for ::1 at 2021-11-10 15:21:37 -0500
+Started GET "/" for ::1 at 2021-11-10 15:22:31 -0500
+
+ActiveRecord::NoDatabaseError - FATAL:  database "first_routes_development" does not exist:
+
+Started POST "/__better_errors/90bbdf9f42103ac0/variables" for ::1 at 2021-11-10 15:22:31 -0500
+  [1m[35m (187.1ms)[0m  [1m[35mCREATE DATABASE "first_routes_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (169.5ms)[0m  [1m[35mCREATE DATABASE "first_routes_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-11-10 15:25:53 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (5.5ms)
+Completed 200 OK in 33ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-11-10 15:26:01 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-11-10 15:26:08 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-11-10 15:27:20 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anna/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 26ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-11-10 15:32:39 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-11-10 15:32:51 -0500
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-11-10 15:37:52 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-11-10 15:43:48 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-11-10 15:43:49 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?admin=true" for ::1 at 2021-11-10 15:44:33 -0500
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?admin=true/users?fav_food=pizza" for ::1 at 2021-11-10 15:44:51 -0500
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true/users?fav_food=pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?admin=true/users?fav_food=pizza" for ::1 at 2021-11-10 15:44:52 -0500
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true/users?fav_food=pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?admin=true" for ::1 at 2021-11-10 15:45:39 -0500
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-11-10 15:46:35 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-11-10 15:46:38 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
