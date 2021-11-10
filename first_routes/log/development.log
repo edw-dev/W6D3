@@ -1,0 +1,5 @@
+Started GET "/" for ::1 at 2021-11-10 15:08:22 -0500
+
+ActiveRecord::NoDatabaseError - connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "first_routes_development" does not exist:
+
+Started POST "/__better_errors/521c9555af39d671/variables" for ::1 at 2021-11-10 15:08:22 -0500
