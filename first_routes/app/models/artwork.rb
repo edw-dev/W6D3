@@ -27,5 +27,10 @@ class Artwork < ApplicationRecord
         foreign_key: :artwork_id,
         class_name: :ArtworkShare
 
+    #this gives us all the Users who have viewed this art
+    has_many :shared_viewers, 
+        through: :artwork_shares,
+        source: :viewer
+
 
 end

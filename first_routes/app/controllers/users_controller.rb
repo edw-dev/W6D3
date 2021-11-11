@@ -8,8 +8,7 @@ class UsersController < ApplicationController
 
     def show
         # user = User.find_by(id: params[:id])
-
-        render json: params
+        render json: User.find(params[:id])
     end
 
     def update

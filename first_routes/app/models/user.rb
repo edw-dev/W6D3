@@ -23,6 +23,11 @@ class User < ApplicationRecord
         primary_key: :id, 
         foreign_key: :viewer_id,
         class_name: :ArtworkShare
+
+    # set of artworks that have been shared with that user
+    has_many :shared_artworks, 
+        through: :artwork_shares,
+        source: :artwork
 end
 
 #this create method is built into ApplicationRecord
