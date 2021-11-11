@@ -14,3 +14,16 @@
 # User.create(name: 'Obama', email: 'bamarocks@gmail.com')
 
 # User.create(name:'Trump', email: 'DUmp@gmail.com')
+User.destroy_all
+Artwork.destroy_all
+ArtworkShare.destroy_all
+
+# User.create(username: 'Buddy')
+# User.create(username: 'Ed')
+# User.create(username: 'Amin')
+
+
+10.times do 
+    name = Faker::Name.unique.name
+    User.create(username: name)
+end
