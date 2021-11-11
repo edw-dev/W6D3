@@ -15,7 +15,7 @@
 #  index_artwork_shares_on_viewer_id                 (viewer_id)
 #
 class ArtworkShare < ApplicationRecord
-    validates :artist_id, uniqueness: true
+    #validates :artist_id, uniqueness: true
 
     belongs_to :artwork, 
         primary_key: :id, 

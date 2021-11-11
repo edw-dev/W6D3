@@ -30,7 +30,7 @@ end
 # art1 = User.create(username: 'KKT')
 
 3.times do 
-    name = Faker::Book.title
+    name = Faker::Food.fruits
     url = Faker::Verb.base
     Artwork.create(title: name, image_url: url, artist_id: User.first[:id] )
 end
@@ -41,7 +41,6 @@ end
     Artwork.create(title: name, image_url: url , artist_id: User.last[:id] )
 end
  
-art1 = Artwork.create(title: Faker::Book.title, image_url: Faker::Verb.base , artist_id: User.last[:id] )
 # user_first_index = User.first[:id]
 # user_last_index = User.last[:id]
 
@@ -53,6 +52,10 @@ art1 = Artwork.create(title: Faker::Book.title, image_url: Faker::Verb.base , ar
 #         end
 #     end
 # end
-# ArtworkShare.create(artwork_id: , viewer_id: User.find_by)
+ArtworkShare.create(artwork_id: 1 , viewer_id: 1)
+ArtworkShare.create(artwork_id: 1 , viewer_id: 2)
+ArtworkShare.create(artwork_id: 1 , viewer_id: 3)
+ArtworkShare.create(artwork_id: 2 , viewer_id: 1)
+ArtworkShare.create(artwork_id: 3 , viewer_id: 1)
 #artwork shares
 # id | artwork_id | viewer_id | created_at | updated_at
