@@ -22,8 +22,31 @@ ArtworkShare.destroy_all
 # User.create(username: 'Ed')
 # User.create(username: 'Amin')
 
-
 10.times do 
     name = Faker::Name.unique.name
     User.create(username: name)
 end
+
+3.times do 
+    name = Faker::Book.title
+    url = Faker::Verb.base
+    Artwork.create(title: name, image_url: url, artist_id: User.first[:id] )
+end
+
+3.times do 
+    name = Faker::Book.title
+    url = Faker::Verb.base
+    Artwork.create(title: name, image_url: url , artist_id: User.last[:id] )
+end
+
+# user_first_index = User.first[:id]
+# user_last_index = User.last[:id]
+
+# (user_first_index..user_last_index).each do |artist_id|
+#     temp = Artwork.select {|art| if Artwork[:artist_id]=artist_id}
+#     if !temp.empty?
+#         temp.each do |art|
+            
+#         end
+#     end
+# end

@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: artworks
+#
+#  id        :bigint           not null, primary key
+#  image_url :string           not null
+#  title     :string           not null
+#  artist_id :integer          not null
+#
+# Indexes
+#
+#  index_artworks_on_artist_id            (artist_id)
+#  index_artworks_on_title_and_artist_id  (title,artist_id) UNIQUE
+#
 class Artwork < ApplicationRecord
     validates :artist_id, :title, :image_url, presence:true 
     validates :title, uniqueness: { scope: :artist_id,
