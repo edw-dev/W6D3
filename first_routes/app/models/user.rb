@@ -17,25 +17,22 @@ class User < ApplicationRecord
     has_many :artworks, 
         primary_key: :id, 
         foreign_key: :artist_id,
-        class_name: :Artwork
-    
-    has_many :viewers, 
+        class_name: :Artwork,
+        dependent: :destroy
+
+        # set of artworks that have been shared with that viewer
+    has_many :artwork_shares, 
         primary_key: :id, 
         foreign_key: :viewer_id,
-        class_name: :ArtworkShare
+        class_name: :ArtworkShare,
+        dependent: :destroy
 
-    # set of artworks that have been shared with that user
+      #one artist can have shared many pieces of art
     has_many :shared_artworks, 
         through: :artwork_shares,
-        source: :artwork
+        source: :artwork,
+        dependent: :destroy
 end
 
-#this create method is built into ApplicationRecord
-# def create
-#     user = User.new(params.require(:user).permit(:name, :email))
-#     if user.save
-#       render json: user
-#     else
-#       render json: user.errors.full_messages, status: :unprocessable_entity
-#     end
-#   end
+
+  #dependent destroy on the has_many associations
